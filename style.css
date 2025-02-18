@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    margin: 5px 0;
+}
+
+.msg {
+    font-weight: bold;
+    color: #075e54; /* WhatsApp's primary color */
+}
+
+button {
+    background-color: #25d366; /* WhatsApp's button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c9e50; /* Darker shade of WhatsApp's button color */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+a {
+    color: #128c7e; /* WhatsApp's link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

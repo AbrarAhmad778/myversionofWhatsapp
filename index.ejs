@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" />
+    <title>Whatsapp</title>
+</head>
+<body>
+    <%for(let i=0;i<data.length;i++){%>
+        <div class="box">
+            <p>from: <%=data[i].from%></p>
+            <p>To: <%=data[i].to%></p>
+            <p class="msg">msg: <%=data[i].msg%></p>
+            <form action="http://localhost:9090/chats/<%=data[i]._id%>/edit" method="get">
+                <button type="submit">Edit</button>
+            </form>
+            <br><br>
+            <form action="http://localhost:9090/chats/<%=data[i]._id%>?_method=DELETE" method="POST">
+
+                <button>Delete</button>
+            </form>
+            <hr>
+            <p><%=data[i].date.toString().split(" ")[4]%></p>
+            <p><%=data[i].date.toString().split(" ").slice(0,4).join("-")%></p>
+    </div>
+    <hr>
+        <%}%>
+        <a href="http://localhost:9090/new">new chat</a>
+</body>
+</html>
